@@ -1,0 +1,2280 @@
+fileFormatVersion: 2
+guid: c5dd93879c9e1cc4e85af1573d295b85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8561555845044590058
+    second: HeroKnightHands_0
+  - first:
+      213: 4871413149842336099
+    second: HeroKnightHands_1
+  - first:
+      213: 5111641749411997438
+    second: HeroKnightHands_2
+  - first:
+      213: -5550014382527360692
+    second: HeroKnightHands_3
+  - first:
+      213: 5126789616137997898
+    second: HeroKnightHands_4
+  - first:
+      213: 8396393953208974215
+    second: HeroKnightHands_5
+  - first:
+      213: 6352214142831464781
+    second: HeroKnightHands_6
+  - first:
+      213: 8680946638261047369
+    second: HeroKnightHands_7
+  - first:
+      213: 8945827243304451872
+    second: HeroKnightHands_8
+  - first:
+      213: -4611364612693749988
+    second: HeroKnightHands_9
+  - first:
+      213: 1917805639303203630
+    second: HeroKnightHands_10
+  - first:
+      213: 2952108527820733682
+    second: HeroKnightHands_11
+  - first:
+      213: -3477594109785026831
+    second: HeroKnightHands_12
+  - first:
+      213: -5235634458741176733
+    second: HeroKnightHands_13
+  - first:
+      213: 7884892069852723113
+    second: HeroKnightHands_14
+  - first:
+      213: -1487001263002628747
+    second: HeroKnightHands_15
+  - first:
+      213: -5623412226806716204
+    second: HeroKnightHands_16
+  - first:
+      213: -284791471507538576
+    second: HeroKnightHands_17
+  - first:
+      213: 126730632669579389
+    second: HeroKnightHands_18
+  - first:
+      213: 3315260908699982678
+    second: HeroKnightHands_19
+  - first:
+      213: 5769202610483120121
+    second: HeroKnightHands_20
+  - first:
+      213: -3233671285951922363
+    second: HeroKnightHands_21
+  - first:
+      213: 2059972369748597676
+    second: HeroKnightHands_22
+  - first:
+      213: -8693903065720574690
+    second: HeroKnightHands_23
+  - first:
+      213: -1694932285895645022
+    second: HeroKnightHands_24
+  - first:
+      213: 7102997242388113317
+    second: HeroKnightHands_25
+  - first:
+      213: 2512318086412643433
+    second: HeroKnightHands_26
+  - first:
+      213: 6488740158742572681
+    second: HeroKnightHands_27
+  - first:
+      213: 8805169830429888190
+    second: HeroKnightHands_28
+  - first:
+      213: -1142027238076061383
+    second: HeroKnightHands_29
+  - first:
+      213: -3378049013267566399
+    second: HeroKnightHands_30
+  - first:
+      213: 9096122352610443834
+    second: HeroKnightHands_31
+  - first:
+      213: 630940209941288823
+    second: HeroKnightHands_32
+  - first:
+      213: -1693714559568902466
+    second: HeroKnightHands_33
+  - first:
+      213: -413917558789846695
+    second: HeroKnightHands_34
+  - first:
+      213: -2215006614176416446
+    second: HeroKnightHands_35
+  - first:
+      213: -7176225190408554836
+    second: HeroKnightHands_36
+  - first:
+      213: 734861045676536759
+    second: HeroKnightHands_37
+  - first:
+      213: -7710888573026678220
+    second: HeroKnightHands_38
+  - first:
+      213: -2134225160368848930
+    second: HeroKnightHands_39
+  - first:
+      213: -2028606565331440968
+    second: HeroKnightHands_40
+  - first:
+      213: -5086270781409886282
+    second: HeroKnightHands_41
+  - first:
+      213: 1675638987849814312
+    second: HeroKnightHands_42
+  - first:
+      213: -1636073704386480139
+    second: HeroKnightHands_43
+  - first:
+      213: -7492265162389926259
+    second: HeroKnightHands_44
+  - first:
+      213: -3247237005391843636
+    second: HeroKnightHands_45
+  - first:
+      213: 4942162670856407862
+    second: HeroKnightHands_46
+  - first:
+      213: 3114373481338065935
+    second: HeroKnightHands_47
+  - first:
+      213: 4153679715948300285
+    second: HeroKnightHands_48
+  - first:
+      213: 7408754712214006870
+    second: HeroKnightHands_49
+  - first:
+      213: 6387746432746089668
+    second: HeroKnightHands_50
+  - first:
+      213: -2955789450276033035
+    second: HeroKnightHands_51
+  - first:
+      213: -3679417783646761213
+    second: HeroKnightHands_52
+  - first:
+      213: -1378285431937849547
+    second: HeroKnightHands_53
+  - first:
+      213: 8457243947954110749
+    second: HeroKnightHands_54
+  - first:
+      213: 3506368596096684984
+    second: HeroKnightHands_55
+  - first:
+      213: 6307742846646401686
+    second: HeroKnightHands_56
+  - first:
+      213: -1806430202777359816
+    second: HeroKnightHands_57
+  - first:
+      213: -6296375590435596579
+    second: HeroKnightHands_58
+  - first:
+      213: 6726142575608483608
+    second: HeroKnightHands_59
+  - first:
+      213: 2081106389105285135
+    second: HeroKnightHands_60
+  - first:
+      213: -8282210861602119539
+    second: HeroKnightHands_61
+  - first:
+      213: 5129050097365265065
+    second: HeroKnightHands_62
+  - first:
+      213: -5164970945857293449
+    second: HeroKnightHands_63
+  - first:
+      213: -6045351267252941548
+    second: HeroKnightHands_64
+  - first:
+      213: -2051735421593922636
+    second: HeroKnightHands_65
+  - first:
+      213: 7205583185461851560
+    second: HeroKnightHands_66
+  - first:
+      213: -1704477423705729839
+    second: HeroKnightHands_67
+  - first:
+      213: -8784579331882981931
+    second: HeroKnightHands_68
+  - first:
+      213: 6649467265356393482
+    second: HeroKnightHands_69
+  - first:
+      213: -7494002201374772316
+    second: HeroKnightHands_70
+  - first:
+      213: -8825890612608954818
+    second: HeroKnightHands_71
+  - first:
+      213: -8817780176095471596
+    second: HeroKnightHands_72
+  - first:
+      213: 3506352318783949788
+    second: HeroKnightHands_73
+  - first:
+      213: 846976464172371181
+    second: HeroKnightHands_74
+  - first:
+      213: 5323795023936052859
+    second: HeroKnightHands_75
+  - first:
+      213: -8177401327480524324
+    second: HeroKnightHands_76
+  - first:
+      213: -8553928404553689103
+    second: HeroKnightHands_77
+  - first:
+      213: 8744161864268112375
+    second: HeroKnightHands_78
+  - first:
+      213: 5516904637208633504
+    second: HeroKnightHands_79
+  - first:
+      213: 2822535216702659360
+    second: HeroKnightHands_80
+  - first:
+      213: 4340594633911127252
+    second: HeroKnightHands_81
+  - first:
+      213: -2135064572697993564
+    second: HeroKnightHands_82
+  - first:
+      213: 3299389663273415140
+    second: HeroKnightHands_83
+  - first:
+      213: 5418682101699703505
+    second: HeroKnightHands_84
+  - first:
+      213: -2334627537467295361
+    second: HeroKnightHands_85
+  - first:
+      213: 2970968234414332724
+    second: HeroKnightHands_86
+  - first:
+      213: -970689956862154270
+    second: HeroKnightHands_87
+  - first:
+      213: 8726591214581204395
+    second: HeroKnightHands_88
+  - first:
+      213: -782208477387594907
+    second: HeroKnightHands_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeroKnightHands_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 442
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61aa27be15e3f2980800000000000000
+      internalID: -8561555845044590058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 442
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369e48e237cba9340800000000000000
+      internalID: 4871413149842336099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 442
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef622c4a61330f640800000000000000
+      internalID: 5111641749411997438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_3
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 442
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41d52703536af2b0800000000000000
+      internalID: -5550014382527360692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_4
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 442
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e01143ef3062740800000000000000
+      internalID: 5126789616137997898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 442
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b324f70dbf58470800000000000000
+      internalID: 8396393953208974215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_6
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 442
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d419ea08b19972850800000000000000
+      internalID: 6352214142831464781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_7
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 442
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940dbaf49fae87870800000000000000
+      internalID: 8680946638261047369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_8
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 442
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f7c231b76f52c70800000000000000
+      internalID: 8945827243304451872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_9
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 442
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f059a11542100c0800000000000000
+      internalID: -4611364612693749988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 387
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b88e6611a6d9a10800000000000000
+      internalID: 1917805639303203630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 387
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcf72ba01ff7f820800000000000000
+      internalID: 2952108527820733682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_12
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 387
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fec54d059a1dbfc0800000000000000
+      internalID: -3477594109785026831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 387
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36600f8033a4757b0800000000000000
+      internalID: -5235634458741176733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_14
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 387
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7bdd3cf83cc6d60800000000000000
+      internalID: 7884892069852723113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_15
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 387
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dcb22da3c1d5be0800000000000000
+      internalID: -1487001263002628747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_16
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 387
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8e893bf50a5f1b0800000000000000
+      internalID: -5623412226806716204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_17
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 387
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d7bb16aa73c0cf0800000000000000
+      internalID: -284791471507538576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_18
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 387
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d784e66c6dc32c100800000000000000
+      internalID: 126730632669579389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_19
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 387
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b1dc04b3c220e20800000000000000
+      internalID: 3315260908699982678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_20
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 332
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f74a1b2533501050800000000000000
+      internalID: 5769202610483120121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_21
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 332
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f74702911bf13d0800000000000000
+      internalID: -3233671285951922363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_22
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 332
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab1cf1c4fd769c10800000000000000
+      internalID: 2059972369748597676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 332
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dab08593d095780800000000000000
+      internalID: -8693903065720574690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_24
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 332
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a869dce0146a78e0800000000000000
+      internalID: -1694932285895645022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_25
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 332
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a76f11db5ae29260800000000000000
+      internalID: 7102997242388113317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_26
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 332
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c2a6f1dfb8dd220800000000000000
+      internalID: 2512318086412643433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_27
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 332
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ea9a9abc2ac0a50800000000000000
+      internalID: 6488740158742572681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_28
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 332
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe82c91f4f323a70800000000000000
+      internalID: 8805169830429888190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_29
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 332
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939e7a61744b620f0800000000000000
+      internalID: -1142027238076061383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_30
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 277
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0f352f152ce11d0800000000000000
+      internalID: -3378049013267566399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_31
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 277
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3206dc161beb3e70800000000000000
+      internalID: 9096122352610443834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_32
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 277
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7779f0037cc81c800800000000000000
+      internalID: 630940209941288823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_33
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 277
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb60dfde497be78e0800000000000000
+      internalID: -1693714559568902466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_34
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 277
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959c80e5c28714af0800000000000000
+      internalID: -413917558789846695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_35
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 277
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dbfd25837b241e0800000000000000
+      internalID: -2215006614176416446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 277
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6fc79e53de86c90800000000000000
+      internalID: -7176225190408554836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_37
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 277
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b372d24a30c23a00800000000000000
+      internalID: 734861045676536759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_38
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 277
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a402662bb6df490800000000000000
+      internalID: -7710888573026678220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_39
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 280
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf73853685b162e0800000000000000
+      internalID: -2134225160368848930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 227
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bae46ca311f8d3e0800000000000000
+      internalID: -2028606565331440968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_41
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 224
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf7d9a2cafe969b0800000000000000
+      internalID: -5086270781409886282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_42
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 224
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821559218c0114710800000000000000
+      internalID: 1675638987849814312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_43
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 224
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7bfa752af7b49e0800000000000000
+      internalID: -1636073704386480139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_44
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 224
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ec6b0d780260890800000000000000
+      internalID: -7492265162389926259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_45
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 222
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccead10f52f7fe2d0800000000000000
+      internalID: -3247237005391843636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_46
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 222
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b8792b3c6169440800000000000000
+      internalID: 4942162670856407862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_47
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 222
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f045d0d3e2a783b20800000000000000
+      internalID: 3114373481338065935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_48
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 222
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df708dbc1b5d4a930800000000000000
+      internalID: 4153679715948300285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_49
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 222
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c6481582f21d660800000000000000
+      internalID: 7408754712214006870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_50
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 167
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc691f6985d5a850800000000000000
+      internalID: 6387746432746089668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_51
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 167
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd2379c72deaf6d0800000000000000
+      internalID: -2955789450276033035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_52
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 167
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fca79250510fcc0800000000000000
+      internalID: -3679417783646761213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_53
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 167
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537af3eb3b85fdce0800000000000000
+      internalID: -1378285431937849547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_54
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 167
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1180a0ff8a2e5570800000000000000
+      internalID: 8457243947954110749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_55
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 167
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b39ded19af19a030800000000000000
+      internalID: 3506368596096684984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_56
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 167
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69abedcf2ba998750800000000000000
+      internalID: 6307742846646401686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_57
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 167
+        width: 47
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a2beb2d454ee6e0800000000000000
+      internalID: -1806430202777359816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_58
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 167
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd655a792c7ce98a0800000000000000
+      internalID: -6296375590435596579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_59
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 167
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f46cf290f085d50800000000000000
+      internalID: 6726142575608483608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_60
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 103
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f089a661c3391ec10800000000000000
+      internalID: 2081106389105285135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_61
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 112
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80e2573a1daf0d80800000000000000
+      internalID: -8282210861602119539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_62
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 112
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaa3a083eb0e2740800000000000000
+      internalID: 5129050097365265065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_63
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 112
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77376f83a465258b0800000000000000
+      internalID: -5164970945857293449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_64
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 112
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d4ee45d099a1ca0800000000000000
+      internalID: -6045351267252941548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_65
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 112
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3dece2185c683e0800000000000000
+      internalID: -2051735421593922636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_66
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 112
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a53bf8fabf5ff360800000000000000
+      internalID: 7205583185461851560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_67
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 112
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4d85850da7858e0800000000000000
+      internalID: -1704477423705729839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_68
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 112
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d560ede3a7e61680800000000000000
+      internalID: -8784579331882981931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_69
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 112
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ce7295f37a74c50800000000000000
+      internalID: 6649467265356393482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_70
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 57
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3bf09e3b4fff790800000000000000
+      internalID: -7494002201374772316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_71
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 57
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e0df8df33248580800000000000000
+      internalID: -8825890612608954818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_72
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 57
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418195006a3f0a580800000000000000
+      internalID: -8817780176095471596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_73
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 57
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb0c724bd019a030800000000000000
+      internalID: 3506352318783949788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_74
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 57
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec4c105b9011cb00800000000000000
+      internalID: 846976464172371181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_75
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 57
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e53ba1e5be1e940800000000000000
+      internalID: 5323795023936052859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 57
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd137b181d8048e80800000000000000
+      internalID: -8177401327480524324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_77
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 57
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7147ccf675a4980800000000000000
+      internalID: -8553928404553689103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_78
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 57
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1e73213e0895970800000000000000
+      internalID: 8744161864268112375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_79
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 57
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0a688a98bff8c40800000000000000
+      internalID: 5516904637208633504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_80
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 13
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b979d33d8ab2720800000000000000
+      internalID: 2822535216702659360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_81
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 11
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc4d3472d3ec3c30800000000000000
+      internalID: 4340594633911127252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_82
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae90db451abe52e0800000000000000
+      internalID: -2135064572697993564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_83
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1f107fa69c9cd20800000000000000
+      internalID: 3299389663273415140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_84
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2f39e79a6033b40800000000000000
+      internalID: 5418682101699703505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_85
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1
+        width: 17
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79ba62cf9cb99fd0800000000000000
+      internalID: -2334627537467295361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_86
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1
+        width: 15
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b5c3b4edffa3920800000000000000
+      internalID: 2970968234414332724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_87
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1
+        width: 15
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9213e80aa6782f0800000000000000
+      internalID: -970689956862154270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_88
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1
+        width: 15
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5482569741b1970800000000000000
+      internalID: 8726591214581204395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroKnightHands_89
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1
+        width: 15
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563630db8890525f0800000000000000
+      internalID: -782208477387594907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
