@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3147521334103047325}
-  - component: {fileID: 3147521334103047327}
   - component: {fileID: 3147521334103047326}
   - component: {fileID: 3147521334103047320}
+  - component: {fileID: 4601700456084811515}
   - component: {fileID: 3147521334103047324}
   - component: {fileID: 4277593610030262334}
   - component: {fileID: -4790640595436383652}
@@ -41,25 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3147521334103047327
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3147521334103047323}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 710abc81db1c24a4eaf7ddc7a27a9cb6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &3147521334103047326
 Rigidbody2D:
   serializedVersion: 4
@@ -107,6 +88,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49, y: 0.45}
   m_EdgeRadius: 0
+--- !u!95 &4601700456084811515
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3147521334103047323}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 710abc81db1c24a4eaf7ddc7a27a9cb6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &3147521334103047324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -192,9 +192,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
-  deathEffect: {fileID: 0}
   boss: {fileID: 3147521334103047323}
   anim: {fileID: 0}
+  isDead: 0
   isInvulnerable: 0
 --- !u!1 &3147521335195692477
 GameObject:

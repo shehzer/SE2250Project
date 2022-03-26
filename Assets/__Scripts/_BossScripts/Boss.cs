@@ -34,7 +34,7 @@ public class Boss : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        m_animator = GetComponent<Animator>();
+        m_animator = this.gameObject.GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
         m_wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor_HeroKnight>();
@@ -69,10 +69,11 @@ public class Boss : MonoBehaviour
         {
             // print("Boss is taking Damage");
             _canAttack = Time.time + _attackSpeed;
-            boss.GetComponent<Boss_Health>().TakeDamage(100);
+            boss.GetComponent<Boss_Health>().TakeDamage(200);
             deadState = boss.GetComponent<Boss_Health>().isDead;
             if(deadState)
             {
+                m_animator.SetTrigger("die");
                 // print("da boi is dead");
                 Invoke("DeleteEnemy", 1f);
                 GameObject.Find("Main Camera").GetComponent<EnemySpawner>().UpdatePoints(500);
