@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossAttack : StateMachineBehaviour
-{   
+public class BossAttack2 : StateMachineBehaviour
+{
     Transform player;
     Rigidbody2D rb;
     private float attackRange = 2f;
@@ -11,14 +11,14 @@ public class BossAttack : StateMachineBehaviour
     private float _canAttack = -1f;
     private float _attackSpeed = 1f;
 
-    Boss boss;
+    Boss2 boss;
 
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        player = GameObject.FindGameObjectWithTag("Player").transform;
        rb = animator.GetComponent<Rigidbody2D>();
-       boss = animator.GetComponent<Boss>();
+       boss = animator.GetComponent<Boss2>();
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

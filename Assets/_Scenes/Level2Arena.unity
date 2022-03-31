@@ -1290,32 +1290,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1121039744 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1550255952593072502, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
-  m_PrefabInstance: {fileID: 5024516927796024593}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1121039745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121039744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc97b5a86528b843b24833df54b0e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 1.96
-  m_noBlood: 0
-  enemyCurrentHealth: 100
-  player: {fileID: 0}
-  playerObject: {fileID: 0}
-  boss: {fileID: 0}
-  deadState: 0
-  isBoss: 0
-  isFlipped: 0
 --- !u!1 &1229545678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,7 +2453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1550255952593072496, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.92
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 1550255952593072496, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2521,12 +2495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss2
       objectReference: {fileID: 0}
-    - target: {fileID: 7374676218715574965, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
+    - target: {fileID: 0}
       propertyPath: boss
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7374676218715574965, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
 --- !u!1001 &5618900468324191454
 PrefabInstance:

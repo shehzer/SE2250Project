@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 1550255952593072501}
   - component: {fileID: 1550255952593072497}
   - component: {fileID: 263911016140677041}
-  - component: {fileID: 7374676218715574965}
+  - component: {fileID: 4241369102749562667}
   m_Layer: 0
   m_Name: Boss2
   m_TagString: Boss
@@ -235,7 +235,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   isDead: 0
   isInvulnerable: 0
---- !u!114 &7374676218715574965
+--- !u!114 &4241369102749562667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,9 +244,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550255952593072502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16fc534025e40264bbcbbcf4c62b55d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bcb07443c77553429c131b69a1305c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_speed: 1.96
+  m_noBlood: 0
+  enemyCurrentHealth: 100
+  player: {fileID: 0}
+  playerObject: {fileID: 0}
+  boss: {fileID: 0}
+  deadState: 0
+  isBoss: 0
+  isFlipped: 0
 --- !u!1 &6100329095010593986
 GameObject:
   m_ObjectHideFlags: 0
