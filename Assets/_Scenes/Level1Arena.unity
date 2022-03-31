@@ -978,6 +978,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6323719953710832613, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
   m_PrefabInstance: {fileID: 1294583879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &549259759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549259758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a900dbf150e2764baa4d5476ffc8bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
+  camWidth: 0
+  camHeight: 0
+  isOnScreen: 1
+  keepOnScreen: 1
+  offLeft: 0
+  offRight: 0
+  offTop: 0
+  offBottom: 0
 --- !u!95 &549259762 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2655505060201611074, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
