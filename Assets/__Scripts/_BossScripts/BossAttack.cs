@@ -10,6 +10,8 @@ public class BossAttack : StateMachineBehaviour
     private float moveSpeed = 2.5f;
     private float _canAttack = -1f;
     private float _attackSpeed = 1f;
+    private bool attackOnce =false;
+    private int count = 0;
 
     Boss boss;
 
@@ -33,6 +35,17 @@ public class BossAttack : StateMachineBehaviour
             //Attack
             animator.SetTrigger("Attack");
             boss.DealDamageToPlayer(10);
+        }
+
+        //check if the boss's hp is less than x, then do the range attack
+
+        if(boss.GetComponent<Boss_Health>().currentHealth() < 400  && Time.time > _canAttack){
+            Debug.LogError("time is " + Time.time);
+            _canAttack = Time.time + _attackSpeed;
+            animator.SetTrigger("Attack1");
+            boss.TempFire();
+            count +=1;
+            // attackOnce = true;
         }
        
     }

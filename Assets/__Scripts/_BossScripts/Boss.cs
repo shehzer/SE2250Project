@@ -22,6 +22,8 @@ public class Boss : MonoBehaviour
     public HeroKnight player;
     public GameObject playerObject;
     public GameObject boss;
+    public GameObject projectilePrefab;
+    public float projectileSpeed = 40.0f;
     
     private int m_facingDirection = 1;
     private float _canAttack = -1f;
@@ -70,6 +72,7 @@ public class Boss : MonoBehaviour
             // print("Boss is taking Damage");
             _canAttack = Time.time + _attackSpeed;
             boss.GetComponent<Boss_Health>().TakeDamage(200);
+            // print(boss.GetComponent<Boss_Health>().currentHealth());
             deadState = boss.GetComponent<Boss_Health>().isDead;
             if(deadState)
             {
@@ -90,7 +93,7 @@ public class Boss : MonoBehaviour
     {
         if(!player.isBlocking && !player.deadState)
         {
-            playerObject.GetComponent<HeroHealth>().ObjectTakeDamage(10);
+            playerObject.GetComponent<HeroHealth>().ObjectTakeDamage(amount);
         }
     }
 
@@ -122,5 +125,16 @@ public class Boss : MonoBehaviour
     private void DeleteEnemy()
     {
         Destroy(this.gameObject);
+    }
+
+      //Firing method
+    public void TempFire()
+    {
+        GameObject projGameObj = Instantiate(projectilePrefab);
+        projGameObj.transform.position = transform.position;
+       // projGameObj.transform.position.x = transform.position.x - 2.253647;
+        Rigidbody2D rigidBody = projGameObj.GetComponent<Rigidbody2D>();
+        rigidBody.velocity = Vector3.left * projectileSpeed;
+        Destroy(projGameObj, 2f);
     }
 }

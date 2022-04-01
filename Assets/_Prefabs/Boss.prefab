@@ -176,6 +176,8 @@ MonoBehaviour:
   player: {fileID: 0}
   playerObject: {fileID: 0}
   boss: {fileID: 0}
+  projectilePrefab: {fileID: 7136142846387742398, guid: ec859543637134945ad566f11fc12557, type: 3}
+  projectileSpeed: 40
   deadState: 0
   isBoss: 0
   isFlipped: 0

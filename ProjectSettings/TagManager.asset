@@ -8,6 +8,7 @@ TagManager:
   - Bird
   - Enemy
   - Boss
+  - HeroProjectile
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - HeroProjectile
+  - Mountain
   - 
   - 
   - 
