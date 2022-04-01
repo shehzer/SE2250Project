@@ -23,6 +23,7 @@ public class Boss : MonoBehaviour
     public GameObject playerObject;
     public GameObject boss;
     public GameObject projectilePrefab;
+    public GameObject laserPrefab;
     public float projectileSpeed = 40.0f;
     
     private int m_facingDirection = 1;
@@ -71,7 +72,7 @@ public class Boss : MonoBehaviour
         {
             // print("Boss is taking Damage");
             _canAttack = Time.time + _attackSpeed;
-            boss.GetComponent<Boss_Health>().TakeDamage(200);
+            boss.GetComponent<Boss_Health>().TakeDamage(100);
             // print(boss.GetComponent<Boss_Health>().currentHealth());
             deadState = boss.GetComponent<Boss_Health>().isDead;
             if(deadState)
@@ -136,5 +137,17 @@ public class Boss : MonoBehaviour
         Rigidbody2D rigidBody = projGameObj.GetComponent<Rigidbody2D>();
         rigidBody.velocity = Vector3.left * projectileSpeed;
         Destroy(projGameObj, 2f);
+    }
+
+     public void SpecialAttack()
+    {
+        GameObject laserGameObj = Instantiate(laserPrefab);
+        laserGameObj.transform.position = transform.position;
+       // projGameObj.transform.position.x = transform.position.x - 2.253647;
+       Vector3 scaleChange = new Vector3(0.05f,0f,0f);
+       laserGameObj.transform.localScale += scaleChange;
+        // Rigidbody2D rigidBody = laserGameObj.GetComponent<Rigidbody2D>();
+        // rigidBody.velocity = Vector3.left * projectileSpeed;
+       Destroy(laserGameObj,1f);
     }
 }

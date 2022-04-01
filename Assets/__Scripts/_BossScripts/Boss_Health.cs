@@ -25,7 +25,6 @@ public class Boss_Health : MonoBehaviour
     }
 
     public int currentHealth(){
-        print("current health" + health);
         return health;
     }
 

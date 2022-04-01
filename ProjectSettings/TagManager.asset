@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Boss
   - HeroProjectile
+  - BossLaser
   layers:
   - Default
   - TransparentFX

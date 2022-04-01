@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3147521334103047323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.8, y: 0, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
+  m_LocalPosition: {x: 10.3927, y: -0.2039, z: 0}
+  m_LocalScale: {x: 4.6549516, y: 4.3186154, z: 1}
   m_Children:
   - {fileID: 3147521335195692482}
   - {fileID: 7675568166353087980}
@@ -177,6 +177,7 @@ MonoBehaviour:
   playerObject: {fileID: 0}
   boss: {fileID: 0}
   projectilePrefab: {fileID: 7136142846387742398, guid: ec859543637134945ad566f11fc12557, type: 3}
+  laserPrefab: {fileID: 5104561307578447778, guid: 17bd49d3f3b019b4d841153aba8c59be, type: 3}
   projectileSpeed: 40
   deadState: 0
   isBoss: 0

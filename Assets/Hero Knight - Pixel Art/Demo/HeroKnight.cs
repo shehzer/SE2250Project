@@ -229,5 +229,9 @@ public class HeroKnight : MonoBehaviour
             this.gameObject.GetComponent<HeroHealth>().ObjectTakeDamage(5);
             //DealDamageToPlayer(5);
         }
+        else if(projectileObj.tag == "BossLaser"){
+            Destroy(projectileObj);
+            this.gameObject.GetComponent<HeroHealth>().ObjectTakeDamage(40);
+        }
     }
 }

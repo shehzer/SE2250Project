@@ -10,9 +10,8 @@ public class BossAttack : StateMachineBehaviour
     private float moveSpeed = 2.5f;
     private float _canAttack = -1f;
     private float _attackSpeed = 1f;
-    private bool attackOnce =false;
     private int count = 0;
-
+    private int specialAttack = 0;
     Boss boss;
 
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -39,21 +38,33 @@ public class BossAttack : StateMachineBehaviour
 
         //check if the boss's hp is less than x, then do the range attack
 
-        if(boss.GetComponent<Boss_Health>().currentHealth() < 400  && Time.time > _canAttack){
-            Debug.LogError("time is " + Time.time);
+        if(boss.GetComponent<Boss_Health>().currentHealth() < 400  && (Vector2.Distance(player.position, rb.position) >= attackRange) && count <3 && Time.time > _canAttack){
             _canAttack = Time.time + _attackSpeed;
             animator.SetTrigger("Attack1");
             boss.TempFire();
             count +=1;
-            // attackOnce = true;
+            if(count == 3){
+                animator.ResetTrigger("Attack1");
+            }
         }
-       
+
+        if(boss.GetComponent<Boss_Health>().currentHealth() <= 200 && (Vector2.Distance(player.position, rb.position) >= attackRange) && Time.time > _canAttack && specialAttack <2 ){
+           _canAttack = Time.time + _attackSpeed;
+           animator.SetTrigger("Attack2");
+            if(specialAttack >0){
+                boss.SpecialAttack();
+                animator.ResetTrigger("Attack2"); 
+            }
+            specialAttack +=1;
+        }
     }
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        animator.ResetTrigger("Attack");
+       animator.ResetTrigger("Attack1");
+       animator.ResetTrigger("Attack2");
     }
 
  
