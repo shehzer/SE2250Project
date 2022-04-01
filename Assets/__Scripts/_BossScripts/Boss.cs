@@ -22,6 +22,9 @@ public class Boss : MonoBehaviour
     public HeroKnight player;
     public GameObject playerObject;
     public GameObject boss;
+    public GameObject projectilePrefab;
+    public GameObject laserPrefab;
+    public float projectileSpeed = 40.0f;
     
     private int m_facingDirection = 1;
     private float _canAttack = -1f;
@@ -34,7 +37,7 @@ public class Boss : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        m_animator = GetComponent<Animator>();
+        m_animator = this.gameObject.GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
         m_wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor_HeroKnight>();
@@ -70,9 +73,11 @@ public class Boss : MonoBehaviour
             // print("Boss is taking Damage");
             _canAttack = Time.time + _attackSpeed;
             boss.GetComponent<Boss_Health>().TakeDamage(100);
+            // print(boss.GetComponent<Boss_Health>().currentHealth());
             deadState = boss.GetComponent<Boss_Health>().isDead;
             if(deadState)
             {
+                m_animator.SetTrigger("die");
                 // print("da boi is dead");
                 Invoke("DeleteEnemy", 1f);
                 GameObject.Find("Main Camera").GetComponent<EnemySpawner>().UpdatePoints(500);
@@ -91,7 +96,7 @@ public class Boss : MonoBehaviour
     {
         if(!player.isBlocking && !player.deadState)
         {
-            playerObject.GetComponent<HeroHealth>().ObjectTakeDamage(10);
+            playerObject.GetComponent<HeroHealth>().ObjectTakeDamage(amount);
         }
     }
 
@@ -123,5 +128,30 @@ public class Boss : MonoBehaviour
     private void DeleteEnemy()
     {
         Destroy(this.gameObject);
+    }
+
+      //Firing method for projectile
+    public void TempFire()
+    {
+        GameObject projGameObj = Instantiate(projectilePrefab);
+        //starting position of projectile
+        projGameObj.transform.position = transform.position;
+        Rigidbody2D rigidBody = projGameObj.GetComponent<Rigidbody2D>();
+        //make it fire to the left
+        rigidBody.velocity = Vector3.left * projectileSpeed;
+        //if it does not hit anything, destroy after 2 seconds
+        Destroy(projGameObj, 2f);
+    }
+    //firing method for laser
+     public void SpecialAttack()
+    {
+        GameObject laserGameObj = Instantiate(laserPrefab);
+        //starting position of laser
+        laserGameObj.transform.position = transform.position;
+        //scale the x
+        Vector3 scaleChange = new Vector3(0.05f,0f,0f);
+        laserGameObj.transform.localScale += scaleChange;
+        //destroy after 1 second if it does not hit anything
+        Destroy(laserGameObj,1f);
     }
 }
