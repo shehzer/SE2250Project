@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject camera; 
-    
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] GameObject bossPrefab;
     [SerializeField] int spawnXOffset = 7;
@@ -17,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
     private float lastXCoord;
     private bool bossMan = false;
     private int currentPoints = 0;
+    private int sceneNum; //.Equals("Level2Arena") ? 2 : 1;
 
     public HeroKnight player;
     public GameObject playerObject;
@@ -25,13 +25,19 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lastXCoord = camera.transform.position.x;
+        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+        lastXCoord = this.transform.position.x;
         print("Start xCoord: " + lastXCoord);
 
         playerObject = GameObject.Find("HeroKnight");
         player = playerObject.GetComponent<HeroKnight>();
 
-        spawnedEnemy = Instantiate(enemyPrefab, new Vector2(6, 0), new Quaternion(0, 0, 0, 0));
+        
+        if (sceneNum == 1) {
+            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(6f, 0f), new Quaternion(0f, 0f, 0f, 0f));
+        } else if (sceneNum == 2) {
+            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(-19.52f, 0f), new Quaternion(0, 0, 0f, 0f));
+        }
         currentEnemies++;
     }
 
@@ -43,16 +49,24 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!bossMan && playerObject.transform.position.x >= 30 && spawnedEnemy == null) {
-            // spawn boss0
+        if (!bossMan && playerObject.transform.position.x >= 30 && spawnedEnemy == null && sceneNum == 1) {
+            // spawn boss1
             bossMan = true;
             spawnedEnemy = Instantiate(bossPrefab, new Vector2(52f,-3.56f), new Quaternion(0,0,0,0));
         }
 
+
+        if (!bossMan && playerObject.transform.position.x >= 26 && spawnedEnemy == null && sceneNum == 2) {
+            // spawn boss2
+            bossMan = true;
+            spawnedEnemy = Instantiate(bossPrefab, new Vector2(43.2f,-2.87f), new Quaternion(0,0,0,0));
+        }
+        
+
         // this is a spawn condition.
         // When spawnedEnemy = null, then it is despawned, indicating that it is dead.
-        if (camera.transform.position.x - lastXCoord > 2 && (spawnedEnemy == null) && currentEnemies != maxEnemies) {
-            lastXCoord = camera.transform.position.x;
+        if (this.transform.position.x - lastXCoord > 2 && (spawnedEnemy == null) && currentEnemies != maxEnemies) {
+            lastXCoord = this.transform.position.x;
             spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffset, 0), new Quaternion(0, 0, 0, 0));
             currentEnemies++;
         }

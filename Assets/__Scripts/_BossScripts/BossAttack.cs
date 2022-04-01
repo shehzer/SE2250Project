@@ -34,7 +34,7 @@ public class BossAttack : StateMachineBehaviour
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
 
-        // if the boss is within attack range and player is not dead then melee attack
+      // if the boss is within attack range and player is not dead then melee attack
         if((Vector2.Distance(player.position, rb.position) <= attackRange) && Time.time > _canAttack && !boss.player.deadState){
             _canAttack = Time.time + _attackSpeed;
             //Attack

@@ -24,9 +24,17 @@ public class HeroHealth : MonoBehaviour
         if (collision.tag == "Firepit")
         {
             ObjectTakeDamage(15); // subtract 15 from health every time player touches fire
-        } else if (collision.tag == "Enemy" && !player.isBlocking && !collision.gameObject.GetComponent<Enemy>().deadState) { // subtract 10 from health every time an enemy hits a player
+        }
+
+        // level 1 
+        else if (collision.tag == "Enemy" && !player.isBlocking && !collision.gameObject.GetComponent<Enemy>().deadState) { // subtract 10 from health every time an enemy hits a player
             ObjectTakeDamage(10);
         }
+
+        // level 2
+        else if (collision.tag == "Enemy2" && !player.isBlocking && !collision.gameObject.GetComponent<Enemy2>().deadState) { // subtract 10 from health every time an enemy hits a player
+            ObjectTakeDamage(10);
+        }  
     }
 
     public void ObjectTakeDamage (int amount)

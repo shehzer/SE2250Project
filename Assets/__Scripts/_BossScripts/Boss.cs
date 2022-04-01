@@ -82,6 +82,8 @@ public class Boss : MonoBehaviour
                 Invoke("DeleteEnemy", 1f);
                 GameObject.Find("Main Camera").GetComponent<EnemySpawner>().UpdatePoints(500);
                 HealPlayer(50);
+            } else if (!deadState) {
+                m_body2d.velocity = new Vector2( (isFlipped == true ? 1 : -1) * 2f, 1.5f); // bounceback vector
             }
 
         }

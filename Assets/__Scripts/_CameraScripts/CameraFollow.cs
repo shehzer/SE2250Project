@@ -17,7 +17,6 @@ public class CameraFollow : MonoBehaviour
     //Various fields to hold information required for bounds checking
     public float radius = 0f;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +42,7 @@ public class CameraFollow : MonoBehaviour
         }
         float moveSpeed = rb.velocity.magnitude > speed ? rb.velocity.magnitude : speed;
         transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
+    }
         camHeight = transform.position.y;
         camWidth = transform.position.x + 18f;
 
@@ -75,8 +75,6 @@ public class CameraFollow : MonoBehaviour
             offLeft = offRight = false;
         }
     }
-
-   
     private Vector3 calculateThreshold()
     {
         Rect aspect = Camera.main.pixelRect;
