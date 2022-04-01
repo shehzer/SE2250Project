@@ -23,4 +23,9 @@ public class Boss_Health : MonoBehaviour
             isDead = true;
         }
     }
+
+    public int currentHealth(){
+        return health;
+    }
+
 }
