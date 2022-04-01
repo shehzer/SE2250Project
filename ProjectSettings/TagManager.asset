@@ -8,6 +8,7 @@ TagManager:
   - Bird
   - Enemy
   - Boss
+  - Enemy2
   layers:
   - Default
   - TransparentFX

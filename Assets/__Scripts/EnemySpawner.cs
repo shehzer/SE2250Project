@@ -8,7 +8,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] GameObject bossPrefab;
-    [SerializeField] int spawnXOffset = 7;
+    [SerializeField] int spawnXOffsetL1 = 7;
+    [SerializeField] int spawnXOffsetL2 = 10;
     [SerializeField] int maxEnemies = 3;
 
     private GameObject spawnedEnemy;
@@ -36,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
         if (sceneNum == 1) {
             spawnedEnemy = Instantiate(enemyPrefab, new Vector2(6f, 0f), new Quaternion(0f, 0f, 0f, 0f));
         } else if (sceneNum == 2) {
-            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(-7.62f, 0f), new Quaternion(0, 0, 0f, 0f));
+            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(-19.52f, 0f), new Quaternion(0, 0, 0f, 0f));
         }
         currentEnemies++;
     }
@@ -49,21 +50,30 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!bossMan && playerObject.transform.position.x >= 30 && spawnedEnemy == null) {
-            // spawn boss0
+        if (!bossMan && playerObject.transform.position.x >= 30 && spawnedEnemy == null && sceneNum == 1) {
+            // spawn boss1
             bossMan = true;
-            if (sceneNum == 1) {
-                spawnedEnemy = Instantiate(bossPrefab, new Vector2(52f,-3.56f), new Quaternion(0,0,0,0));
-            } else if (sceneNum == 2) {
-                spawnedEnemy = Instantiate(bossPrefab, new Vector2(43.2f,-2.87f), new Quaternion(0,0,0,0));
-            }
+            spawnedEnemy = Instantiate(bossPrefab, new Vector2(52f,-3.56f), new Quaternion(0,0,0,0));
         }
+
+
+        if (!bossMan && playerObject.transform.position.x >= 26 && spawnedEnemy == null && sceneNum == 2) {
+            // spawn boss2
+            bossMan = true;
+            spawnedEnemy = Instantiate(bossPrefab, new Vector2(43.2f,-2.87f), new Quaternion(0,0,0,0));
+        }
+        
 
         // this is a spawn condition.
         // When spawnedEnemy = null, then it is despawned, indicating that it is dead.
         if (this.transform.position.x - lastXCoord > 2 && (spawnedEnemy == null) && currentEnemies != maxEnemies) {
             lastXCoord = this.transform.position.x;
-            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffset, 0), new Quaternion(0, 0, 0, 0));
+
+            if (sceneNum == 1) {
+                spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffsetL1, 0), new Quaternion(0, 0, 0, 0));
+            } else if (sceneNum == 2) {
+                spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffsetL2, 0), new Quaternion(0, 0, 0, 0));
+            }
             currentEnemies++;
         }
     
