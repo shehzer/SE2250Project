@@ -1203,8 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 7897162903618203130, guid: a5059c12812f68d4592bc7569738e66c, type: 3}
   bossPrefab: {fileID: 1550255952593072502, guid: 0108f77ead4e56c43aff689386df82f4, type: 3}
-  spawnXOffsetL1: 7
-  spawnXOffsetL2: 10
+  spawnXOffset: 10
   maxEnemies: 5
   player: {fileID: 1064229155}
   playerObject: {fileID: 1064229150}

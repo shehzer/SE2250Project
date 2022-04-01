@@ -8,8 +8,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] GameObject bossPrefab;
-    [SerializeField] int spawnXOffsetL1 = 7;
-    [SerializeField] int spawnXOffsetL2 = 10;
+    [SerializeField] int spawnXOffset = 7;
     [SerializeField] int maxEnemies = 3;
 
     private GameObject spawnedEnemy;
@@ -68,12 +67,7 @@ public class EnemySpawner : MonoBehaviour
         // When spawnedEnemy = null, then it is despawned, indicating that it is dead.
         if (this.transform.position.x - lastXCoord > 2 && (spawnedEnemy == null) && currentEnemies != maxEnemies) {
             lastXCoord = this.transform.position.x;
-
-            if (sceneNum == 1) {
-                spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffsetL1, 0), new Quaternion(0, 0, 0, 0));
-            } else if (sceneNum == 2) {
-                spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffsetL2, 0), new Quaternion(0, 0, 0, 0));
-            }
+            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffset, 0), new Quaternion(0, 0, 0, 0));
             currentEnemies++;
         }
     
