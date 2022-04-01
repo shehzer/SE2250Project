@@ -9,13 +9,6 @@ public class CameraFollow : MonoBehaviour
     public float speed = 3f;
     private Vector2 threshold;
     private Rigidbody2D rb;
-    public float camWidth;
-    public float camHeight;
-    public bool isOnScreen = true;
-    public bool keepOnScreen = true;
-    public bool offLeft, offRight;
-    //Various fields to hold information required for bounds checking
-    public float radius = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,38 +36,7 @@ public class CameraFollow : MonoBehaviour
         float moveSpeed = rb.velocity.magnitude > speed ? rb.velocity.magnitude : speed;
         transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
     }
-        camHeight = transform.position.y;
-        camWidth = transform.position.x + 18f;
 
-    }
-
-    //Check if the object is out of the defined boundaries (based on camera and specified distance)
-    void LateUpdate()
-    {
-        offLeft = offRight = false;
-        Vector3 pos = transform.position;
-        isOnScreen = true;
-
-        if (pos.x > camWidth - radius)
-        {
-            pos.x = camWidth - radius;
-            offRight = true;
-        }
-        if (pos.x < -camWidth + radius)
-        {
-            pos.x = -camWidth + radius;
-            offLeft = true;
-        }
-
-        //If it is desired to keep this object on screen, transform its position to be on screen
-        isOnScreen = !(offRight || offLeft);
-        if(keepOnScreen && !isOnScreen)
-        {
-            transform.position = pos;
-            isOnScreen = true;
-            offLeft = offRight = false;
-        }
-    }
     private Vector3 calculateThreshold()
     {
         Rect aspect = Camera.main.pixelRect;

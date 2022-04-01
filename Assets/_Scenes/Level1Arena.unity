@@ -1478,19 +1478,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 791936833}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ceb4fdc9ec403419d61b66fc3db241, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cdd7e26a5222434081a2e0a9f0ea369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followObject: {fileID: 549259758}
   followOffset: {x: 7, y: 0}
   speed: 3
-  camWidth: 0
-  camHeight: 0
-  isOnScreen: 1
-  keepOnScreen: 1
-  offLeft: 0
-  offRight: 0
-  radius: 1
 --- !u!114 &791936838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,13 +2045,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1019848788}
   - component: {fileID: 1019848787}
-  - component: {fileID: 1019848789}
   m_Layer: 0
   m_Name: Moon Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1019848787
 SpriteRenderer:
@@ -2119,26 +2111,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019848786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.839246, y: 3.085121, z: 14.370856}
+  m_LocalPosition: {x: -1.93, y: 2.92, z: 14.370856}
   m_LocalScale: {x: 0.33142275, y: 0.3114939, z: 1}
   m_Children: []
   m_Father: {fileID: 947823487}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1019848789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019848786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f58363465d239b4e876cb2bcf49a85c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 791936833}
-  parallexEffect: 0
 --- !u!1 &1058944001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,6 +2422,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.2}
   m_EdgeRadius: 0
+--- !u!1 &1228518688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8923298659159915098, guid: 85e8542b25fec06429e67684708f42aa, type: 3}
+  m_PrefabInstance: {fileID: 8923298658156655090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1228518689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228518688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ecf346b084c024d9330dc3d3db001b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
 --- !u!1 &1276873705
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,5 +4305,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Bird
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5623559555865939107, guid: 85e8542b25fec06429e67684708f42aa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 85e8542b25fec06429e67684708f42aa, type: 3}
