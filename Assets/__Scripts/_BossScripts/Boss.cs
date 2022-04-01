@@ -128,26 +128,28 @@ public class Boss : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-      //Firing method
+      //Firing method for projectile
     public void TempFire()
     {
         GameObject projGameObj = Instantiate(projectilePrefab);
+        //starting position of projectile
         projGameObj.transform.position = transform.position;
-       // projGameObj.transform.position.x = transform.position.x - 2.253647;
         Rigidbody2D rigidBody = projGameObj.GetComponent<Rigidbody2D>();
+        //make it fire to the left
         rigidBody.velocity = Vector3.left * projectileSpeed;
+        //if it does not hit anything, destroy after 2 seconds
         Destroy(projGameObj, 2f);
     }
-
+    //firing method for laser
      public void SpecialAttack()
     {
         GameObject laserGameObj = Instantiate(laserPrefab);
+        //starting position of laser
         laserGameObj.transform.position = transform.position;
-       // projGameObj.transform.position.x = transform.position.x - 2.253647;
-       Vector3 scaleChange = new Vector3(0.05f,0f,0f);
-       laserGameObj.transform.localScale += scaleChange;
-        // Rigidbody2D rigidBody = laserGameObj.GetComponent<Rigidbody2D>();
-        // rigidBody.velocity = Vector3.left * projectileSpeed;
-       Destroy(laserGameObj,1f);
+        //scale the x
+        Vector3 scaleChange = new Vector3(0.05f,0f,0f);
+        laserGameObj.transform.localScale += scaleChange;
+        //destroy after 1 second if it does not hit anything
+        Destroy(laserGameObj,1f);
     }
 }

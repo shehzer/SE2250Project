@@ -217,6 +217,11 @@ public class HeroKnight : MonoBehaviour
         }
     }
 
+    /*
+
+        Function to detect projectile collisions from the boss
+        If hit by boss projectile, damage the hero
+    */
      public void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject projectileObj = collision.gameObject;
