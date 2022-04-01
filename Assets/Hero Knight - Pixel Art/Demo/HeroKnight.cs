@@ -10,6 +10,7 @@ public class HeroKnight : MonoBehaviour
     [SerializeField] bool m_noBlood = false;
     [SerializeField] GameObject m_slideDust;
 
+
     public bool isBlocking = false;
     public bool shieldCombatMode = false; // false = block, true = attack
     public bool isAttacking = false;
@@ -213,6 +214,29 @@ public class HeroKnight : MonoBehaviour
             GameObject dust = Instantiate(m_slideDust, spawnPosition, gameObject.transform.localRotation) as GameObject;
             // Turn arrow in correct direction
             dust.transform.localScale = new Vector3(m_facingDirection, 1, 1);
+        }
+    }
+
+    /*
+
+        Function to detect projectile collisions from the boss
+        If hit by boss projectile, damage the hero
+    */
+     public void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameObject projectileObj = collision.gameObject;
+        print(projectileObj);
+        print("hit player");
+        if(projectileObj.tag == "HeroProjectile")
+        {
+            Destroy(projectileObj);
+            // Destroy(gameObject);
+            this.gameObject.GetComponent<HeroHealth>().ObjectTakeDamage(5);
+            //DealDamageToPlayer(5);
+        }
+        else if(projectileObj.tag == "BossLaser"){
+            Destroy(projectileObj);
+            this.gameObject.GetComponent<HeroHealth>().ObjectTakeDamage(40);
         }
     }
 }
