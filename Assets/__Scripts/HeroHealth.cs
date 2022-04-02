@@ -10,12 +10,22 @@ public class HeroHealth : MonoBehaviour
     public HealthBarStatus healthBar; 
     public Animator anim;
     public HeroKnight player;
+
+    private int sceneNum;
   
     void Start()
     {
+        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1)); // getting scene number from the title of the scene. They are in the format LevelXArena, where x = sceneNum
+
         heroCurrentHealth = heroMaxHealth;
         healthBar.setMaxHealth(heroMaxHealth);
-        player = GameObject.Find("HeroKnight").GetComponent<HeroKnight>();
+
+        // finding the player based on the level #
+        if (sceneNum == 1) {
+            player = GameObject.Find("HeroKnight").GetComponent<HeroKnight>();
+        } else if (sceneNum == 2) {
+            player = GameObject.Find("Monk").GetComponent<HeroKnight>();
+        }
     }
 
 
