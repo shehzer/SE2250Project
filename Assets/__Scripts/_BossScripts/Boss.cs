@@ -55,6 +55,8 @@ public class Boss : MonoBehaviour
 
         GetComponent<SpriteRenderer>().flipX = true;
         m_facingDirection = 1;
+
+
     }
 
     // Update is called once per frame
@@ -77,6 +79,7 @@ public class Boss : MonoBehaviour
                 Invoke("DeleteEnemy", 1f);
                 GameObject.Find("Main Camera").GetComponent<EnemySpawner>().UpdatePoints(500);
                 HealPlayer(50);
+              
             }
 
         }
