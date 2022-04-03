@@ -46,7 +46,7 @@ public class Boss2 : MonoBehaviour
         m_wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_HeroKnight>();
 
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        playerObject = GameObject.Find("HeroKnight");
+        playerObject = GameObject.Find("Monk");
         boss = this.gameObject;
         if (boss == null){
             Debug.LogError("No Boss component found.");  

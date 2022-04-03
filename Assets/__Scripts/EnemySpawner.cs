@@ -16,7 +16,7 @@ public class EnemySpawner : MonoBehaviour
     private float lastXCoord;
     private bool bossMan = false;
     private int currentPoints = 0;
-    private int sceneNum; //.Equals("Level2Arena") ? 2 : 1;
+    private int sceneNum;
 
     public HeroKnight player;
     public GameObject playerObject;
@@ -30,15 +30,15 @@ public class EnemySpawner : MonoBehaviour
         lastXCoord = this.transform.position.x;
         print("Start xCoord: " + lastXCoord);
 
-        playerObject = GameObject.Find("HeroKnight");
-        player = playerObject.GetComponent<HeroKnight>();
-
-        
         if (sceneNum == 1) {
+            playerObject = GameObject.Find("HeroKnight");
             spawnedEnemy = Instantiate(enemyPrefab, new Vector2(6f, 0f), new Quaternion(0f, 0f, 0f, 0f));
         } else if (sceneNum == 2) {
+            playerObject = GameObject.Find("Monk");
             spawnedEnemy = Instantiate(enemyPrefab, new Vector2(-19.52f, 0f), new Quaternion(0, 0, 0f, 0f));
         }
+
+        player = playerObject.GetComponent<HeroKnight>();
         currentEnemies++;
     }
 
@@ -83,16 +83,15 @@ public class EnemySpawner : MonoBehaviour
         currentPoints += pointVal;
         Text text = GameObject.Find("PointText").GetComponent<Text>();
         text.text = "Points: " + currentPoints;
-        
     }
 
     public void UpdateShieldStatus(bool status) {
         Text text = GameObject.Find("ShieldText").GetComponent<Text>();
         
         if(status) {
-            text.text = "Shield Status: Attack";
+            text.text = "Block Status: Attack";
         } else {
-            text.text = "Shield Status: Blocking";
+            text.text = "Block Status: Blocking";
         }
         
     }

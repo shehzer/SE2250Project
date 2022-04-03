@@ -58,10 +58,10 @@ public class Enemy2 : MonoBehaviour
         m_wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_HeroKnight>();
 
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        playerObject = GameObject.Find("HeroKnight");
+        playerObject = GameObject.Find("Monk");
         player = playerObject.GetComponent<HeroKnight>();
         
-        if (this.gameObject.name == "Boss(Clone)") 
+        if (this.gameObject.name == "Boss2(Clone)") 
             isBoss = true;
 
         GetComponent<SpriteRenderer>().flipX = true;
