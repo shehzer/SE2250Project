@@ -20,6 +20,7 @@ public class EnemySpawner : MonoBehaviour
 
     public HeroKnight player;
     public GameObject playerObject;
+    public bool isBossDead = false;
 
     // spawn one enemy initially at the start 
     // Start is called before the first frame update
@@ -49,19 +50,24 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!bossMan && playerObject.transform.position.x >= 30 && spawnedEnemy == null && sceneNum == 1) {
+        if (sceneNum == 1 && !bossMan && playerObject.transform.position.x >= 30 && spawnedEnemy == null) {
             // spawn boss1
             bossMan = true;
             spawnedEnemy = Instantiate(bossPrefab, new Vector2(52f,-3.56f), new Quaternion(0,0,0,0));
         }
 
 
-        if (!bossMan && playerObject.transform.position.x >= 26 && spawnedEnemy == null && sceneNum == 2) {
+        if (sceneNum == 2 && !bossMan && playerObject.transform.position.x >= 26 && spawnedEnemy == null) {
             // spawn boss2
             bossMan = true;
             spawnedEnemy = Instantiate(bossPrefab, new Vector2(43.2f,-2.87f), new Quaternion(0,0,0,0));
         }
         
+        // indicates the death of the boss
+        if (bossMan && !isBossDead && spawnedEnemy == null) {
+            isBossDead = true;
+            print("boss is dead");
+        }
 
         // this is a spawn condition.
         // When spawnedEnemy = null, then it is despawned, indicating that it is dead.
