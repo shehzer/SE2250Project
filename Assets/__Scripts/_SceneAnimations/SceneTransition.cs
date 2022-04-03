@@ -14,7 +14,13 @@ public class SceneTransition : MonoBehaviour
 
     void Start() {
         sceneEnemySpawner = mainSceneCamera.GetComponent<EnemySpawner>();
-        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+
+        // indicates we are in a transition scene, which follows the naming convention "BetweenLxLy" where x = scene we are transitioning from and y = scene we are transitioning to
+        if (SceneManager.GetActiveScene().name.Substring(0,3).Equals("Bet")){
+            sceneNum = -1; // indicates a transition scene 
+        } else {
+            sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+        }
     }
 
     void Update()
@@ -26,6 +32,10 @@ public class SceneTransition : MonoBehaviour
 
         // automatic level change
         if (sceneNum == 1 && sceneEnemySpawner.isBossDead) {
+            Invoke("LoadNewLevel", 3);
+        }
+
+        if (sceneNum == -1) {
             Invoke("LoadNewLevel", 3);
         }
 
