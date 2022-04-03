@@ -5,14 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+    [SerializeField] Camera mainSceneCamera;
+    private EnemySpawner sceneEnemySpawner;
+    private int sceneNum;
+    
     public Animator transitionScene;
     public float transitionDelay = 1f;
-  
+
+    void Start() {
+        sceneEnemySpawner = mainSceneCamera.GetComponent<EnemySpawner>();
+        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+    }
+
     void Update()
     {
+        // manual level change 
         if (Input.GetKeyDown("t")){
-
             LoadNewLevel();
+        }
+
+        // automatic level change
+        if (sceneNum == 1 && sceneEnemySpawner.isBossDead) {
+            Invoke("LoadNewLevel", 3);
         }
 
     }

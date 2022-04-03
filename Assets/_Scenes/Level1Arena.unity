@@ -432,6 +432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UILevel
       objectReference: {fileID: 0}
+    - target: {fileID: 2696855445675250311, guid: 44cb4c57bbb585841b11765b86e4e2d8, type: 3}
+      propertyPath: mainSceneCamera
+      value: 
+      objectReference: {fileID: 791936835}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44cb4c57bbb585841b11765b86e4e2d8, type: 3}
 --- !u!1 &140183742
@@ -1366,6 +1370,7 @@ MonoBehaviour:
   maxEnemies: 3
   player: {fileID: 0}
   playerObject: {fileID: 0}
+  isBossDead: 0
 --- !u!1 &797661439
 GameObject:
   m_ObjectHideFlags: 0
