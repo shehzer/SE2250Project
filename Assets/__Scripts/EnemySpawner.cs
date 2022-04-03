@@ -77,16 +77,15 @@ public class EnemySpawner : MonoBehaviour
         currentPoints += pointVal;
         Text text = GameObject.Find("PointText").GetComponent<Text>();
         text.text = "Points: " + currentPoints;
-        
     }
 
     public void UpdateShieldStatus(bool status) {
         Text text = GameObject.Find("ShieldText").GetComponent<Text>();
         
         if(status) {
-            text.text = "Shield Status: Attack";
+            text.text = "Block Status: Attack";
         } else {
-            text.text = "Shield Status: Blocking";
+            text.text = "Block Status: Blocking";
         }
         
     }

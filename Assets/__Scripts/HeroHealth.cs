@@ -64,10 +64,12 @@ public class HeroHealth : MonoBehaviour
     public void Heal (int amount)
     {
         heroCurrentHealth += amount; // add certain amount of healh 
+        print(heroCurrentHealth);
         if (heroCurrentHealth > heroMaxHealth) // if the current health is greater than max health
         {
             heroCurrentHealth = heroMaxHealth; // caps out health - cannot exceed max health
         }
+        healthBar.SetHealth(heroCurrentHealth);
     }
 
     //Method that restores the original scene of the game once the hero has been destroyed
