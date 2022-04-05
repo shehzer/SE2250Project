@@ -31,14 +31,11 @@ public class SceneTransition : MonoBehaviour
         }
 
         // automatic level change
-        if (sceneNum == 1 && sceneEnemySpawner.isBossDead) {
+        if (sceneNum == -1) { 
+            Invoke("LoadNewLevel", 3);
+        } else if (sceneNum > 0 && sceneNum != 3 && sceneEnemySpawner.isBossDead) {
             Invoke("LoadNewLevel", 3);
         }
-
-        if (sceneNum == -1) {
-            Invoke("LoadNewLevel", 3);
-        }
-
     }
 
     public void LoadNewLevel()

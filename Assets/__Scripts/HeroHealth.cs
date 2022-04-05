@@ -25,6 +25,8 @@ public class HeroHealth : MonoBehaviour
             player = GameObject.Find("HeroKnight").GetComponent<HeroKnight>();
         } else if (sceneNum == 2) {
             player = GameObject.Find("Monk").GetComponent<HeroKnight>();
+        } else if (sceneNum == 3) {
+            player = GameObject.Find("FireKnight").GetComponent<HeroKnight>();
         }
     }
 
