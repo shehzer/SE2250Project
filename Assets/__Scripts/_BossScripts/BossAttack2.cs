@@ -33,7 +33,7 @@ public class BossAttack2 : StateMachineBehaviour
             _canAttack = Time.time + _attackSpeed;
             //Attack
             animator.SetTrigger("Attack");
-            boss.DealDamageToPlayer(10);
+            boss.DealDamageToPlayer(20);
         }
        
     }
