@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class HeroKnight : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class HeroKnight : MonoBehaviour
     [SerializeField] float m_rollForce = 6.0f;
     [SerializeField] bool m_noBlood = false;
     [SerializeField] GameObject m_slideDust;
+    [SerializeField] float healTimerThresholdSeconds = 5;
 
 
     public bool isBlocking = false;
@@ -23,6 +25,8 @@ public class HeroKnight : MonoBehaviour
     private Sensor_HeroKnight m_wallSensorR2;
     private Sensor_HeroKnight m_wallSensorL1;
     private Sensor_HeroKnight m_wallSensorL2;
+    private HeroHealth healthReference;
+    private int sceneNum;
     private bool m_isWallSliding = false;
     private bool m_grounded = false;
     private bool m_rolling = false;
@@ -32,12 +36,18 @@ public class HeroKnight : MonoBehaviour
     private float m_delayToIdle = 0.0f;
     private float m_rollDuration = 8.0f / 14.0f;
     private float m_rollCurrentTime;
-
+    private float timeSinceHeal;
+    private static float lastSceneXCoord;
 
 
     // Use this for initialization
     void Start()
     {
+        healthReference = GetComponent<HeroHealth>();
+        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+        if (sceneNum == 3) {
+            this.transform.position = new Vector3(lastSceneXCoord, -3.1617f, 0);
+        }
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
@@ -52,12 +62,16 @@ public class HeroKnight : MonoBehaviour
     {
         if (!deadState)
         {
+            lastSceneXCoord = this.gameObject.transform.position.x;
             if (m_timeSinceAttack > 0.35f)
             {
                 isAttacking = false;
             }
             // Increase timer that controls attack combo
             m_timeSinceAttack += Time.deltaTime;
+
+            // Increase timer for healing
+            timeSinceHeal += Time.deltaTime;
 
             // Increase timer that checks roll duration
             if (m_rolling)
@@ -193,6 +207,13 @@ public class HeroKnight : MonoBehaviour
                 m_delayToIdle -= Time.deltaTime;
                 if (m_delayToIdle < 0)
                     m_animator.SetInteger("AnimState", 0);
+            }
+
+            // level 2 heal
+            if (sceneNum == 2 && Input.GetKeyDown("h") && timeSinceHeal >= healTimerThresholdSeconds) {
+                m_animator.SetTrigger("Heal");
+                healthReference.Heal(10);
+                timeSinceHeal = 0;
             }
         }
     }
