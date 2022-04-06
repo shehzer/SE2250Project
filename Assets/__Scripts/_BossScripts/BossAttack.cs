@@ -39,7 +39,7 @@ public class BossAttack : StateMachineBehaviour
             _canAttack = Time.time + _attackSpeed;
             //Attack
             animator.SetTrigger("Attack");
-            boss.DealDamageToPlayer(10);
+            boss.DealDamageToPlayer(20);
         }
 
         //check if the boss's hp is less than 400 hp, and player is further than melee range then do the range attack

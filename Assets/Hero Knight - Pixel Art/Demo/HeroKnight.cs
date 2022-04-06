@@ -37,6 +37,7 @@ public class HeroKnight : MonoBehaviour
     private float m_rollDuration = 8.0f / 14.0f;
     private float m_rollCurrentTime;
     private float timeSinceHeal;
+    private static float lastSceneXCoord;
 
 
     // Use this for initialization
@@ -44,6 +45,9 @@ public class HeroKnight : MonoBehaviour
     {
         healthReference = GetComponent<HeroHealth>();
         sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+        if (sceneNum == 3) {
+            this.transform.position = new Vector3(lastSceneXCoord, -3.1617f, 0);
+        }
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
@@ -58,6 +62,7 @@ public class HeroKnight : MonoBehaviour
     {
         if (!deadState)
         {
+            lastSceneXCoord = this.gameObject.transform.position.x;
             if (m_timeSinceAttack > 0.35f)
             {
                 isAttacking = false;

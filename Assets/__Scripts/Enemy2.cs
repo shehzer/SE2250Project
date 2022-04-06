@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Enemy2 : MonoBehaviour
@@ -31,12 +32,12 @@ public class Enemy2 : MonoBehaviour
     private float m_delayToIdle = 0.0f;
     private float m_rollDuration = 8.0f / 14.0f;
     private float m_rollCurrentTime;
-
     private float xOffsetHitbox = 1.5f;
     private float yOffsetHitbox = 0.662f;
     private float xOffsetHitboxBoss = 5f;
     private float xOffsetHitboxShieldAttack = 1f;
     private float yOffsetHitboxShieldAttack = 0.662f;
+    private int sceneNum;
 
     private float inputX = -1;
 
@@ -49,6 +50,7 @@ public class Enemy2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1)); // getting scene number from the title of the scene. They are in the format LevelXArena, where x = sceneNum
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
@@ -58,7 +60,11 @@ public class Enemy2 : MonoBehaviour
         m_wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_HeroKnight>();
 
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        playerObject = GameObject.Find("Monk");
+        if (sceneNum == 2) {
+            playerObject = GameObject.Find("Monk");
+        } else if (sceneNum == 3) {
+            playerObject = GameObject.Find("FireKnight");
+        }
         player = playerObject.GetComponent<HeroKnight>();
         
         if (this.gameObject.name == "Boss2(Clone)") 

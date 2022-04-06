@@ -17,6 +17,7 @@ public class EnemySpawner : MonoBehaviour
     private bool bossMan = false;
     private int currentPoints = 0;
     private int sceneNum;
+    private bool s3EnemiesSpawned = false;
 
     public HeroKnight player;
     public GameObject playerObject;
@@ -36,6 +37,9 @@ public class EnemySpawner : MonoBehaviour
         } else if (sceneNum == 2) {
             playerObject = GameObject.Find("Monk");
             spawnedEnemy = Instantiate(enemyPrefab, new Vector2(-19.52f, 0f), new Quaternion(0, 0, 0f, 0f));
+        } else if (sceneNum == 3) {
+            playerObject = GameObject.Find("FireKnight");
+            spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x - spawnXOffset, 0f), new Quaternion(0, 0, 0f, 0f));
         }
 
         player = playerObject.GetComponent<HeroKnight>();
@@ -69,14 +73,20 @@ public class EnemySpawner : MonoBehaviour
             print("boss is dead");
         }
 
+        if (sceneNum == 3 && !s3EnemiesSpawned) {
+            for (int i = 1; i < 4; i++) {
+                Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x - spawnXOffset - 2*i,-2f), new Quaternion(0,0,0,0));
+            }
+            s3EnemiesSpawned = true;
+        }
+
         // this is a spawn condition.
         // When spawnedEnemy = null, then it is despawned, indicating that it is dead.
-        if (this.transform.position.x - lastXCoord > 2 && (spawnedEnemy == null) && currentEnemies != maxEnemies) {
+        if (sceneNum != 3 && this.transform.position.x - lastXCoord > 2 && (spawnedEnemy == null) && currentEnemies != maxEnemies) {
             lastXCoord = this.transform.position.x;
             spawnedEnemy = Instantiate(enemyPrefab, new Vector2(playerObject.transform.position.x + spawnXOffset, 0), new Quaternion(0, 0, 0, 0));
             currentEnemies++;
         }
-    
     }
     
     public void UpdatePoints(int pointVal) {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -9,10 +10,18 @@ public class CameraFollow : MonoBehaviour
     public float speed = 3f;
     private Vector2 threshold;
     private Rigidbody2D rb;
+    private int sceneNum;
+
+    private static float lastXCoord;
 
     // Start is called before the first frame update
     void Start()
     {
+        sceneNum = int.Parse(SceneManager.GetActiveScene().name.Substring(5, 1));
+        if (sceneNum == 3) {
+            this.gameObject.transform.position = new Vector3(lastXCoord, 0, -10);
+        }
+
         threshold = calculateThreshold();
         rb = followObject.GetComponent<Rigidbody2D>();
     }
@@ -35,6 +44,8 @@ public class CameraFollow : MonoBehaviour
         }
         float moveSpeed = rb.velocity.magnitude > speed ? rb.velocity.magnitude : speed;
         transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
+
+        lastXCoord = newPosition.x;
     }
 
     private Vector3 calculateThreshold()
